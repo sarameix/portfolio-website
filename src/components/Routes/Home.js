@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import PDF from '../../Documents/SaraMeixner_Resume.pdf';
+import PDF from '../../documents/SaraMeixner_Resume.pdf';
 
 ///////////////////
 // HOME FUNCTION //
