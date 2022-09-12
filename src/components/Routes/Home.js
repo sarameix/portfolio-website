@@ -4,6 +4,7 @@
 
 import React from 'react';
 import { useNavigate } from "react-router-dom";
+import PDF from '../../documents/SaraMeixner_Resume.pdf';
 
 ///////////////////
 // HOME FUNCTION //
@@ -42,9 +43,11 @@ const Home = () => {
                         <h3 className="home-descrip">Book Worm</h3>
                     </div>
                     <div className="home-buttons-container">
-                        <button value="/About" onClick={handleRouteSwitch}>About Me</button>
-                        <button value="/Resume" onClick={handleRouteSwitch}>Resume</button>
-                        <button value="/Projects" onClick={handleRouteSwitch}>Projects</button>
+                        <button className='home-nav-button' value="/About" onClick={handleRouteSwitch}>About Me</button>
+                        <a href={PDF} without rel="noopener noreferrer" target="_blank">
+                            <button className='home-nav-button' trailingIcon="picture_as_pdf" label="Resume">Resume</button>
+                        </a>
+                        <button className='home-nav-button' value="/Projects" onClick={handleRouteSwitch}>Projects</button>
                     </div>
                 </div> 
             </div>
