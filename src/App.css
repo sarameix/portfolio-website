@@ -2,7 +2,7 @@
 /* Import Fonts */
 /****************/
 
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@300;500&display=swap');
 
 /*****************/
 /* Standard Tags */
@@ -13,7 +13,20 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+main {
+  padding: 0 1em;
+  margin-top: 175px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.9em;
+  text-align: center;
+  margin: .25em 0 .25em 0;
 }
 
 /****************/
@@ -36,7 +49,7 @@ body {
 }
 
 .overlay {
-  position : absolute;
+  position: absolute;
   top: 0;
   left: 0;
   flex: none;
@@ -50,7 +63,7 @@ body {
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
-  transform: translateY(-80%);
+  transform: translateY(-65%);
 }
 
 .vertical-center > * {
@@ -59,17 +72,16 @@ body {
 }
 
 .home-header {
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 7vw;
+  font-family: 'Dancing Script', cursive;
+  font-size: 10vw;
   text-align: center;
-  text-transform: uppercase;
-  height: 1.75em;
   text-shadow: 0px 0px 15px black;
 }
 
 .home-descrip-container {
   display: flex;
   justify-content: center;
+  margin: 10px 0 30px 0;
 }
 
 .home-descrip-container > * {
@@ -88,7 +100,6 @@ body {
 .home-buttons-container {
   display: flex;
   justify-content: center;
-  margin-top: 1.25em;
 }
 
 .home-buttons-container > button {
@@ -98,13 +109,152 @@ body {
   text-transform: uppercase;
   width: max-content;
   padding: .3em .85em;
-  border: 1px solid rgb(65, 141, 212);
+  border: 1px solid rgb(37, 115, 188);
   border-radius: .5em;
   margin: 0 .5em;
+  cursor: pointer;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.25);
 }
 
 .home-buttons-container > button:hover {
   background-color: rgb(199, 83, 156);
-  border: 1px solid rgb(221, 119, 183);
+  border: 1px solid rgb(204, 91, 163);
+}
+
+/**********/
+/* Header */
+/**********/
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 135px;
+  box-shadow: -1px 0px 8px 5px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.home-button {
+  background-image: url('../public/images/logo.png');
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+.header-links {
+  margin-right: 3vw;
+}
+
+.header-button {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 80, 156);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.75em;
+  font-weight: 300;
+  border: none;
+  margin-left: .75em;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  color: rgb(199, 83, 156);
+}
+
+/**********/
+/* Footer */
+/**********/
+
+footer {
+  width: 100%;
+  padding: 1.5em 0;
+  margin: 50px 0 0 0;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-media {
+  background-color: rgb(33, 110, 183);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 .75em;
+}
+
+.social-media:hover {
+  background-color: rgb(199, 83, 156);
+}
+
+.social-media > div {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  display: flex;
+}
+
+.github-image {
+  background-image: url('../public/images/icon-git.png');
+  background-size: cover;
+}
+
+.linkedin-image {
+  background-image: url('../public/images/icon-linkedin.png');
+  background-size: cover;
+}
+
+.vimeo-image {
+  background-image: url('../public/images/icon-vimeo.png');
+  background-size: cover;
+}
+
+/************/
+/* About Me */
+/************/
+
+.line {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+}
+
+.about-container {
+  width: 100%;
+}
+
+.about-headshot {
+  background-image: url('../public/images/headshot.png');
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  margin: 2.25em auto 2.25em auto;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 200px;
+}
+
+.about-p {
+  font-size: 1.25em;
+  line-height: 1.3em;
+  text-indent: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.about-p:first-of-type {
+  margin-bottom: .75em;
 }

@@ -4,6 +4,13 @@
 
 import React from 'react';
 
+////////////////
+// COMPONENTS //
+////////////////
+
+import Header from '../Elements/Header';
+import Footer from '../Elements/Footer';
+
 ////////////////////
 // ABOUT FUNCTION //
 ////////////////////
@@ -11,7 +18,13 @@ import React from 'react';
 const Resume = () => {
     return (
         <>
-            <h1>Resume</h1>
+            <Header />
+            <main>
+                <div className='line'></div>
+                <h1>Resume</h1>
+                <div className='line'></div>
+            </main>
+            <Footer />
         </>
     );
 }
