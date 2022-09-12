@@ -81,7 +81,7 @@ h1 {
 .home-descrip-container {
   display: flex;
   justify-content: center;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 28px 0;
 }
 
 .home-descrip-container > * {
