@@ -2,7 +2,7 @@
 /* Import Fonts */
 /****************/
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto:wght@300;500&display=swap');
 
 /*****************/
 /* Standard Tags */
@@ -19,14 +19,18 @@ body {
 
 main {
   padding: 0 1em;
-  margin-top: 175px;
+  margin-top: 150px;
 }
 
 h1 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Euphoria Script', cursive;
   font-size: 3.9em;
   text-align: center;
   margin: .25em 0 .25em 0;
+}
+
+h3, h5 {
+  font-weight: 300;
 }
 
 /****************/
@@ -59,21 +63,27 @@ h1 {
 }
 
 .vertical-center {
+  width: 750px;
   margin: 0 auto;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-65%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .vertical-center > * {
   color: white;
+  width: 100%;
   margin: 0;
 }
 
 .home-header {
-  font-family: 'Dancing Script', cursive;
-  font-size: 10vw;
+  font-family: 'Euphoria Script', cursive;
+  font-size: 700%;
   text-align: center;
   text-shadow: 0px 0px 15px black;
 }
@@ -81,11 +91,11 @@ h1 {
 .home-descrip-container {
   display: flex;
   justify-content: center;
-  margin: 10px 0 28px 0;
+  margin: 2px 0 32px 0;
 }
 
 .home-descrip-container > * {
-  font-size: 2.5vw;
+  font-size: 200%;
   font-weight: 300;
   text-shadow: 0px 0px 15px black;
 }
@@ -101,14 +111,16 @@ h1 {
 .home-buttons-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .home-nav-button {
   color: white;
   background-color: rgb(33, 110, 183);
-  font-size: 2vw;
+  font-size: 135%;
   text-transform: uppercase;
   width: max-content;
+  height: 20%;
   padding: .3em .85em;
   border: 1px solid rgb(37, 115, 188);
   border-radius: .5em;
@@ -136,7 +148,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 135px;
+  height: 110px;
   box-shadow: -1px 0px 8px 5px rgba(0, 0, 0, 0.4);
   z-index: 3;
 }
@@ -145,8 +157,8 @@ header {
   background-image: url('../public/images/logo.png');
   background-size: cover;
   background-color: rgba(255, 255, 255, 0);
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   border: none;
   margin-left: 1vw;
   cursor: pointer;
@@ -160,7 +172,7 @@ header {
   background-color: rgba(255, 255, 255, 0);
   color: rgb(0, 80, 156);
   font-family: 'Roboto', sans-serif;
-  font-size: 1.75em;
+  font-size: 1.55em;
   font-weight: 300;
   border: none;
   margin-left: .75em;
@@ -177,8 +189,8 @@ header {
 
 footer {
   width: 100%;
-  padding: 1.5em 0;
-  margin: 50px 0 0 0;
+  padding: 1em 0;
+  margin: 52px 0 0 0;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -187,7 +199,7 @@ footer {
 }
 
 .social-media {
-  background-color: rgb(33, 110, 183);
+  background-color: rgb(58, 142, 220);
   color: rgb(255, 255, 255);
   font-size: 20px;
   width: 50px;
@@ -199,7 +211,7 @@ footer {
 }
 
 .social-media:hover {
-  background-color: rgb(199, 83, 156);
+  background-color: rgb(228, 97, 180);
 }
 
 .social-media > div {
@@ -258,4 +270,112 @@ footer {
 
 .about-p:first-of-type {
   margin-bottom: .75em;
+}
+
+/************/
+/* Projects */
+/************/
+
+.projects-container {
+  width: 95%;
+  margin: 2.75em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.project-container {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  width: 400px;
+  height: 325px;
+  padding: 0;
+  border-style: none;
+  border-radius: .25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.project-thumbnail {
+  width: 400px;
+  height: 225px;
+  border-top-left-radius: .25em;
+  border-top-right-radius: .25em;
+}
+
+#potluck-project-thumbnail {
+  background-image: url('../public/images/potluck_thumbnail.png');
+  background-size: cover;
+  background-position: 0px -32px;
+}
+
+.project-info {
+  background-color: white;
+  width: 400px;
+  height: 100px;
+  border-bottom-left-radius: .25em;
+  border-bottom-right-radius: .25em;
+}
+
+.project-info > h3 {
+  background-color: rgb(51, 133, 209);
+  color: white;
+  font-size: .5em;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  padding: .2em 0;
+  margin: 0;
+}
+
+.project-buttons-container {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-buttons-container > button {
+  background-color: rgb(58, 142, 220);
+  color: white;
+  font-size: .3em;
+  text-transform: uppercase;
+  width: 125px;
+  height: 28px;
+  border-style: none;
+  border-radius: .25em;
+  margin: 0 .75em;
+  cursor: pointer;
+}
+
+.project-buttons-container > button:hover {
+  background-color: rgb(228, 97, 180);
+}
+
+/*****************/
+/* Media Queries */
+/*****************/
+
+@media only screen and (max-width: 800px) {
+
+  .home-header {
+    font-size: 12vw;
+  }
+
+  .home-descrip-container {
+    margin: 2px 0 24px 0;
+  }
+
+  .home-descrip-container > * {
+    font-size: 3.5vw;
+  }
+
+  .home-nav-button {
+    font-size: 2.5vw;
+  }
 }
