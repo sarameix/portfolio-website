@@ -16,6 +16,11 @@ import Footer from '../Elements/Footer';
 ////////////////////
 
 const About = () => {
+
+    ////////////////////////
+    // BODY HTML ELEMENTS //
+    ////////////////////////
+
     return (
         <>
             <Header />

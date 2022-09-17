@@ -18,16 +18,9 @@ import Footer from '../Elements/Footer';
 
 const Projects = () => {
 
-    // Create Navigation Functionality
-    const navigate = useNavigate();
-
-    //////////////////////
-    // HELPER FUNCTIONS //
-    //////////////////////
-
-    const handleRouteSwitch = (event) => {
-        navigate(event.target.value);
-    }
+    ////////////////////////
+    // BODY HTML ELEMENTS //
+    ////////////////////////
 
     return (
         <>
