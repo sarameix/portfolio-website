@@ -32,8 +32,8 @@ const Header = () => {
             <button className='home-button' value="/" onClick={handleRouteSwitch}></button>
             <div className="header-links">
                 <button className='header-button' value="/About" onClick={handleRouteSwitch}>About Me</button>
-                <a href={PDF} without rel="noopener noreferrer" target="_blank">
-                    <button className='header-button' trailingIcon="picture_as_pdf" label="Resume">Resume</button>
+                <a href={PDF} without="true" rel="noopener noreferrer" target="_blank">
+                    <button className='header-button' trailingicon="picture_as_pdf" label="Resume">Resume</button>
                 </a>
                 <button className='header-button' value="/Projects" onClick={handleRouteSwitch}>Projects</button>
                 <button className='header-button' value="/Contact" onClick={handleRouteSwitch}>Contact</button>

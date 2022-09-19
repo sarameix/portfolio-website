@@ -44,8 +44,8 @@ const Home = () => {
                     </div>
                     <div className="home-buttons-container">
                         <button className='home-nav-button' value="/About" onClick={handleRouteSwitch}>About Me</button>
-                        <a href={PDF} without="true" rel="noopener noreferrer" target="_blank">
-                            <button className='home-nav-button' trailingicon="picture_as_pdf" label="Resume">Resume</button>
+                        <a href={PDF} className='home-nav-button'  without="true" rel="noopener noreferrer" target="_blank">
+                            Resume
                         </a>
                         <button className='home-nav-button' value="/Projects" onClick={handleRouteSwitch}>Projects</button>
                         <button className='home-nav-button' value="/Contact" onClick={handleRouteSwitch}>Contact</button>
