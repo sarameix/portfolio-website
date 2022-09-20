@@ -181,8 +181,8 @@ header {
   align-items: center;
   position: relative;
   background-color: rgb(58, 142, 220);
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   border: 1px solid white;
   margin-right: 1.65em;
@@ -192,14 +192,14 @@ header {
 .more {
   background-color: white;
   width: 62%;
-  height: 6px;
+  height: 5px;
   border-radius: 1px;
   margin: 4px 0
 }
 
 .close1 {
   width: 72%;
-  height: 6px;
+  height: 5px;
   background-color: white;
   position: absolute;
   border-radius: 5px;
