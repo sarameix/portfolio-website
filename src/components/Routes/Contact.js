@@ -2,7 +2,8 @@
 // IMPORTS //
 /////////////
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 ////////////////
 // COMPONENTS //
@@ -37,6 +38,22 @@ const Contact = () => {
     
     const handleSubmit = () => {
         if (name && email && message) {
+            // Set Email Parameters
+            const serviceId = 'service_y6u4f3z';
+            const templateId = 'template_fhp7j18';
+            const userId = '-wBK6ZfaUvtu4D_5y';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
+
+            // Send Email Thru EmailJS
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
+
+            // Reset States on Submit
             setName('');
             setEmail('');
             setMessage('');
@@ -57,17 +74,23 @@ const Contact = () => {
                 <div className='line'></div>
                 <h1>Contact Me</h1>
                 <div className='line'></div>
-                <h3>If you want to get in touch, fill out this form!</h3>
-                <h5>Or you can email me directly at: sarameix22@gmail.com</h5>
+                <h3 className='contact-header'>I'm interested in all Software Engineering opportunities, no matter the job. If you want to get in touch, fill out this form, or you can email me directly at: <span className='contact-email'>sarameix22@gmail.com</span>!</h3>
                 <div id="contact-form">
-                    <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} /><br />
-                    <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} /><br />
-                    <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea><br />
-                    <button onClick={handleSubmit}>Send Message</button><br />
+                    <div className='contact-border-top'></div>
+                    <div className='contact-form-input'>
+                        <h3>Contact Form</h3>
+                        <label htmlFor='name'>Your Name</label><br/>
+                        <input name='name' type="text" placeholder="Example: John Smith" value={name} onChange={e => setName(e.target.value)} /><br />
+                        <label htmlFor='name'>Your Email Address</label><br/>
+                        <input name='email' type="email" placeholder="Example: email@gmail.com" value={email} onChange={e => setEmail(e.target.value)} /><br />
+                        <label htmlFor='message'>Your Message</label><br/>
+                        <textarea name='message' placeholder="Type your message here..." value={message} onChange={e => setMessage(e.target.value)}></textarea><br />
+                        <button onClick={handleSubmit}>Send Message</button><br />
+                    </div>
                 </div>
                 {
                     emailSent ?
-                        <h3>Thank you for your message, we will be in touch in no time!</h3>
+                        <h4 className='contact-confirm'>Thank you for your message! I will be reaching out to you shortly.</h4>
                     :
                      null
                 }
