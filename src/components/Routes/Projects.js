@@ -41,18 +41,6 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='project-container tv-tracker'>
-                        <div className='project-thumbnail' id='tv-tracker-project-thumbnail'></div>
-                        <div className='project-info'>
-                            <h3>T.V. Tracker.</h3>
-                            <p>T.V. Tracker. is website for people to track their progress on T.V. shows they are watching. The front-end was created using React, and the back-end was created with MongoDB.</p>
-                            <div className='project-buttons-container'>
-                                <a className='project-buttons-three' href='https://murmuring-bayou-80614.herokuapp.com/'>Live Site</a>
-                                <a className='project-buttons-three' href='https://github.com/sarameix/movie-app-frontend'>Front-End Repo</a>
-                                <a className='project-buttons-three' href='https://github.com/kevocs410/Movie-App-BackEnd'>Back-End Repo</a>
-                            </div>
-                        </div>
-                    </div>
                     <div className='project-container wastd'>
                         <div className='project-thumbnail' id='wastd-project-thumbnail'></div>
                         <div className='project-info'>
@@ -62,6 +50,30 @@ const Projects = () => {
                                 <a className='project-buttons-three' href='https://rocky-temple-80630.herokuapp.com/'>Live Site</a>
                                 <a className='project-buttons-three' href='https://github.com/ampersand22/drinkapp-front'>Front-End Repo</a>
                                 <a className='project-buttons-three' href='https://github.com/sarameix/drink-rest-api'>Back-End Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='project-container leftover'>
+                        <div className='project-thumbnail' id='leftover-project-thumbnail'></div>
+                        <div className='project-info'>
+                            <h3>Leftover</h3>
+                            <p>Leftover is a website that helps users keep track of food in their pantry and view recipes based on what they have. The front-end was created using React, and the back-end was created with .NET.</p>
+                            <div className='project-buttons-container'>
+                                <a className='project-buttons-three' href='https://leftover-frontend.netlify.app/'>Live Site</a>
+                                <a className='project-buttons-three' href='https://github.com/sarameix/leftover-front-end'>Front-End Repo</a>
+                                <a className='project-buttons-three' href='https://github.com/sarameix/leftover-back-end'>Back-End Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='project-container tv-tracker'>
+                        <div className='project-thumbnail' id='tv-tracker-project-thumbnail'></div>
+                        <div className='project-info'>
+                            <h3>T.V. Tracker.</h3>
+                            <p>T.V. Tracker. is website for people to track their progress on T.V. shows they are watching. The front-end was created using React, and the back-end was created with MongoDB.</p>
+                            <div className='project-buttons-container'>
+                                <a className='project-buttons-three' href='https://murmuring-bayou-80614.herokuapp.com/'>Live Site</a>
+                                <a className='project-buttons-three' href='https://github.com/sarameix/movie-app-frontend'>Front-End Repo</a>
+                                <a className='project-buttons-three' href='https://github.com/kevocs410/Movie-App-BackEnd'>Back-End Repo</a>
                             </div>
                         </div>
                     </div>

@@ -189,6 +189,10 @@ header {
   cursor: pointer
 }
 
+.header-hamburger:hover {
+  background-color: rgb(78, 156, 229);
+}
+
 .more {
   background-color: white;
   width: 62%;
@@ -288,8 +292,8 @@ footer {
   background-color: rgb(58, 142, 220);
   color: rgb(255, 255, 255);
   font-size: 20px;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   padding: 5px;
   border-radius: 50px;
   cursor: pointer;
@@ -304,8 +308,8 @@ footer {
 }
 
 .social-media > div {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin: 0;
   display: flex;
 }
@@ -367,11 +371,11 @@ footer {
 
 .projects-container {
   width: 95%;
-  margin: 2.75em auto;
+  margin: 2.75em auto 4em auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 475px);
   justify-content: center;
-  grid-gap: 4em;
+  grid-gap: 2.5em 4em;
 }
 
 .project-container {
@@ -411,6 +415,12 @@ footer {
 
 #wastd-project-thumbnail {
   background-image: url('../public/images/wastd_thumbnail.png');
+  background-size: cover;
+  background-position: 0px 0px;
+}
+
+#leftover-project-thumbnail {
+  background-image: url('../public/images/leftover_thumbnail.png');
   background-size: cover;
   background-position: 0px 0px;
 }
