@@ -105,3 +105,10 @@ dist
 
 # Local Netlify folder
 .netlify
+
+server.key
+server.pass.key
+server.csr
+server.*
+*.crt
+*.key
